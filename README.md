@@ -1,4 +1,4 @@
-# Perfect Local Authentication App Template (PostgreSQL) [简体中文](README.zh_CN.md)
+# Perfect Local Authentication App Template (MySQL) [简体中文](README.zh_CN.md)
 
 <p align="center">
     <a href="http://perfect.org/get-involved.html" target="_blank">
@@ -43,7 +43,7 @@
 
 This repository holds a template which can be cloned to serve as a starter for new work. It builds with Swift Package Manager and produces a stand-alone HTTP executable.
 
-It includes ready-to-go Local Authentication routes and setup with sessions, using PostgreSQL as a backend.
+It includes ready-to-go Local Authentication routes and setup with sessions, using MySQL as a backend.
 
 All you need to do is complete the indormation in the `/config/ApplicationConfiguration.json` files with your own information and run.
 
@@ -58,10 +58,10 @@ The master branch of this project currently compiles with **Xcode 8.3** or the *
 The following will clone and build an empty starter project and launch the server on port 8181.
 
 ```
-git clone https://github.com/PerfectlySoft/Perfect-Local-Auth-PostgreSQL-Template.git
-cd Perfect-Local-Auth-PostgreSQL-Template
+git clone https://github.com/PerfectlySoft/Perfect-Local-Auth-MySQL-Template.git
+cd Perfect-Local-Auth-MySQL-Template
 swift build
-.build/debug/PerfectLocalAuthPostgreSQLTemplate
+.build/debug/PerfectLocalAuthMySQLTemplate
 ```
 
 You should see the following output:
@@ -78,9 +78,9 @@ The template contains the following directories:
 
 #### config
 
-The config directory contains two files `ApplicationConfiguration_copy.json` and `ApplicationConfigurationLinux.json`. Add configuration options to these files and add them to be read and assigned in the `config()` function in `config/Config.swift`
+The config directory contains two files `ApplicationConfiguration_template.json` and `ApplicationConfigurationLinux.json`. Add configuration options to these files and add them to be read and assigned in the `config()` function in `config/Config.swift`
 
-Duplicate the `ApplicationConfiguration_copy.json` file and rename to `ApplicationConfiguration.json` and populate with your own information.
+Duplicate the `ApplicationConfiguration_template.json` file and rename to `ApplicationConfiguration.json` and populate with your own information.
 
 #### webroot
 
