@@ -11,7 +11,7 @@ import PerfectHTTP
 import PerfectSession
 import PerfectCrypto
 import PerfectSessionMySQL
-import LocalAuthentication
+import PerfectLocalAuthentication
 
 extension Handlers {
 
